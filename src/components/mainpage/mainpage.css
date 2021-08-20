@@ -58,6 +58,7 @@
   padding: 0.5rem 2rem;
   border-radius: 20px;
   transition: all 0.4s ease-in-out;
+  cursor: pointer;
 }
 .social {
   width: 40px;

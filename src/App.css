@@ -17,3 +17,6 @@ body {
   filter: blur(3px);
   object-fit: cover;
 }
+a{
+  text-decoration: none;
+}

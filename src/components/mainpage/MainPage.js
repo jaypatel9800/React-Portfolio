@@ -24,7 +24,7 @@ const MainPage = () => {
   return (
     <div className="mainpage__main">
       <div className="mainpage__first">
-        {!first && <h1 onMouseEnter={() => setFirst(true)}>Hello,</h1>}
+        {!first && <h1 onMouseEnter={() => setFirst(true)}>Hello.</h1>}
         {first && <h1 className="mainpage__hoverText" onMouseLeave={() => setFirst(false)}><Link to="/about" className="mainpage__link">About</Link></h1>}
       </div>
       <div className="mainpage__second">
