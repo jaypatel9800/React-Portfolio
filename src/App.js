@@ -3,8 +3,8 @@ import MainPage from "./components/mainpage/MainPage";
 import Skill from "./components/skills/Skills";
 import About from "./components/aboutpage/About";
 import Projects from "./components/Projects/Projects";
-import Back from "./assets/back.png"
-import "./app.css";
+import Back from "./assets/back.png";
+import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 const App = () => {
