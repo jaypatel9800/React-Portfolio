@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./projects.css";
+import HighlightOffRoundedIcon from "@material-ui/icons/HighlightOffRounded";
 import { useHistory } from "react-router-dom";
 import Back from "../../assets/back.svg";
 import ChatApp from "../../assets/project/chatApp.png";
@@ -48,25 +49,25 @@ const Projects = () => {
               </div>
             )}
             {!first && (
-              <a
-                href="https://csb-tnopx.netlify.app/"
-                target="_blank"
-                rel="noreferrer"
+              <div
+                onMouseLeave={() => setFirst(true)}
+                className="project__info"
               >
-                <div
-                  onMouseLeave={() => setFirst(true)}
-                  className="project__info"
-                >
-                  <h2>Real Time ChatApp</h2>
-                  <div>
-                    <p>ReactJs</p>
-                    <p>Socket.io</p>
-                    <p>Nodejs</p>
-                    <p>React Emoji</p>
-                    <p>Material-Ui</p>
-                  </div>
+                <h2>Real Time ChatApp</h2>
+                <div>
+                  <p>ReactJs</p>
+                  <p>Socket.io</p>
+                  <p>Nodejs</p>
+                  <p>React Emoji</p>
+                  <p>Material-Ui</p>
                 </div>
-              </a>
+                <button
+                  className="project__closeBtn"
+                  onClick={() => setFirst(true)}
+                >
+                  <HighlightOffRoundedIcon />
+                </button>
+              </div>
             )}
           </div>
 
@@ -89,24 +90,24 @@ const Projects = () => {
               </div>
             )}
             {!second && (
-              <a
-                href="https://csb-c0snf.netlify.app/"
-                target="_blank"
-                rel="noreferrer"
+              <div
+                onMouseLeave={() => setSecond(true)}
+                className="project__info"
               >
-                <div
-                  onMouseLeave={() => setSecond(true)}
-                  className="project__info"
-                >
-                  <h2>Ip Address Tracker</h2>
-                  <div>
-                    <p>ReactJs</p>
-                    <p>IP Geolocation API</p>
-                    <p>leafletjs</p>
-                    <p>styled components</p>
-                  </div>
+                <h2>Ip Address Tracker</h2>
+                <div>
+                  <p>ReactJs</p>
+                  <p>IP Geolocation API</p>
+                  <p>leafletjs</p>
+                  <p>styled components</p>
                 </div>
-              </a>
+                <button
+                  className="project__closeBtn"
+                  onClick={() => setSecond(true)}
+                >
+                  <HighlightOffRoundedIcon />
+                </button>
+              </div>
             )}
           </div>
 
@@ -129,24 +130,24 @@ const Projects = () => {
               </div>
             )}
             {!third && (
-              <a
-                href="https://jaypatel9800.github.io/todos/#/"
-                target="_blank"
-                rel="noreferrer"
+              <div
+                onMouseLeave={() => setThird(true)}
+                className="project__info"
               >
-                <div
-                  onMouseLeave={() => setThird(true)}
-                  className="project__info"
-                >
-                  <h2>Todo App</h2>
-                  <div>
-                    <p>ReactJS</p>
-                    <p>css</p>
-                    <p>React Routers</p>
-                    <p> With Theme Toggle</p>
-                  </div>
+                <h2>Todo App</h2>
+                <div>
+                  <p>ReactJS</p>
+                  <p>css</p>
+                  <p>React Routers</p>
+                  <p> With Theme Toggle</p>
                 </div>
-              </a>
+                <button
+                  className="project__closeBtn"
+                  onClick={() => setThird(true)}
+                >
+                  <HighlightOffRoundedIcon />
+                </button>
+              </div>
             )}
           </div>
 
@@ -169,20 +170,24 @@ const Projects = () => {
               </div>
             )}
             {!fourth && (
-              <a href="https://qkd45.csb.app/" target="_blank" rel="noreferrer">
-                <div
-                  onMouseLeave={() => setFourth(true)}
-                  className="project__info"
-                >
-                  <h2>Amazon Clone</h2>
-                  <div>
-                    <p>ReactJs</p>
-                    <p>Context API</p>
-                    <p>Firebase Auth</p>
-                    <p>React Routers</p>
-                  </div>
+              <div
+                onMouseLeave={() => setFourth(true)}
+                className="project__info"
+              >
+                <h2>Amazon Clone</h2>
+                <div>
+                  <p>ReactJs</p>
+                  <p>Context API</p>
+                  <p>Firebase Auth</p>
+                  <p>React Routers</p>
                 </div>
-              </a>
+                <button
+                  className="project__closeBtn"
+                  onClick={() => setFourth(true)}
+                >
+                  <HighlightOffRoundedIcon />
+                </button>
+              </div>
             )}
           </div>
 
@@ -205,23 +210,23 @@ const Projects = () => {
               </div>
             )}
             {!fifth && (
-              <a
-                href="https://jaypatel9800.github.io/sunShine-landingPage/"
-                target="_blank"
-                rel="noreferrer"
+              <div
+                onMouseLeave={() => setFifth(true)}
+                className="project__info"
               >
-                <div
-                  onMouseLeave={() => setFifth(true)}
-                  className="project__info"
-                >
-                  <h2>SunShine Landing Page</h2>
-                  <div>
-                    <p>HTML</p>
-                    <p>CSS Grid</p>
-                    <p>JavaScript</p>
-                  </div>
+                <h2>SunShine Landing Page</h2>
+                <div>
+                  <p>HTML</p>
+                  <p>CSS Grid</p>
+                  <p>JavaScript</p>
                 </div>
-              </a>
+                <button
+                  className="project__closeBtn"
+                  onClick={() => setFifth(true)}
+                >
+                  <HighlightOffRoundedIcon />
+                </button>
+              </div>
             )}
           </div>
 
@@ -244,24 +249,21 @@ const Projects = () => {
               </div>
             )}
             {!six && (
-              <a
-                href="https://csb-qc7y4.netlify.app/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <div
-                  onMouseLeave={() => setSix(true)}
-                  className="project__info"
-                >
-                  <h2>React Step Form</h2>
-                  <div>
-                    <p>ReactJs</p>
-                    <p>Material-Ui</p>
-                    <p>React hooks helper</p>
-                    <p>With validation</p>
-                  </div>
+              <div onMouseLeave={() => setSix(true)} className="project__info">
+                <h2>React Step Form</h2>
+                <div>
+                  <p>ReactJs</p>
+                  <p>Material-Ui</p>
+                  <p>React hooks helper</p>
+                  <p>With validation</p>
                 </div>
-              </a>
+                <button
+                  className="project__closeBtn"
+                  onClick={() => setSix(true)}
+                >
+                  <HighlightOffRoundedIcon />
+                </button>
+              </div>
             )}
           </div>
         </div>
