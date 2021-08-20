@@ -26,6 +26,7 @@ const About = () => {
               src={Person}
               alt="LeptopPerson"
               onMouseEnter={() => setToggle(true)}
+              onClick={() => setToggle(true)}
             />
           )}
           {toggle && (
@@ -33,6 +34,7 @@ const About = () => {
               src={Mypic}
               alt="mypic"
               onMouseLeave={() => setToggle(false)}
+              onClick={() => setToggle(false)}
             />
           )}
         </div>
@@ -50,7 +52,7 @@ const About = () => {
             ReactJs. I have 1+ experience in front-end development.
           </h2>
           <a href={Resume} target="_blank" rel="noreferrer" download>
-            <img src={ResumeLogo} alt="Resume"/>
+            <img src={ResumeLogo} alt="Resume" />
           </a>
         </div>
       </div>
