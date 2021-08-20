@@ -143,6 +143,7 @@ const Projects = () => {
                     <p>ReactJS</p>
                     <p>css</p>
                     <p>React Routers</p>
+                    <p> With Theme Toggle</p>
                   </div>
                 </div>
               </a>
@@ -216,7 +217,7 @@ const Projects = () => {
                   <h2>SunShine Landing Page</h2>
                   <div>
                     <p>HTML</p>
-                    <p>CSS</p>
+                    <p>CSS Grid</p>
                     <p>JavaScript</p>
                   </div>
                 </div>
