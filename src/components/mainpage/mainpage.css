@@ -60,6 +60,7 @@
   transition: all 0.4s ease-in-out;
   cursor: pointer;
   outline: none;
+  animation: size 1s ease-in-out infinite forwards alternate;
 }
 .social {
   width: 40px;
@@ -89,6 +90,17 @@
   }
   to {
     transform: scalex(1);
+  }
+}
+@keyframes size {
+  0% {
+    transform: scale(0.92);
+  }
+  50% {
+    transform: translate(1);
+  }
+  100% {
+    transform: translate(0.92);
   }
 }
 
