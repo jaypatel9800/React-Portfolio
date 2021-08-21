@@ -50,7 +50,7 @@
   font-weight: 700;
   font-size: 2rem;
   letter-spacing: 0.5px;
-  cursor:default;
+  cursor: default;
 }
 
 .about__imgSec {
@@ -62,7 +62,7 @@
   object-fit: cover;
   cursor: pointer;
 }
-.about__imgSec img{
+.about__imgSec img {
   width: 100%;
   height: auto;
   border-radius: 50%;
@@ -73,36 +73,36 @@
 
 .about__descSec {
   grid-area: about__descSec;
-  height:100%;
-  display:grid;
+  height: 100%;
+  display: grid;
   place-items: center;
   overflow-y: scroll;
-  cursor:default;
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  cursor: default;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 .about__descSec::-webkit-scrollbar {
-    display: none;
-  }
-  .about__descSec > h2 {
-    font-size:16px;
-    letter-spacing: 0.5px;
-    line-height:23px;
-    font-weight:500;
-    margin: 0 0 1rem 0;
-  }
+  display: none;
+}
+.about__descSec > h2 {
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  line-height: 23px;
+  font-weight: 500;
+  margin: 0 0 1rem 0;
+}
 .about__descSec a {
-  border:1px solid black;
+  border: 1px solid black;
   border-radius: 10px;
   text-align: center;
   width: 20%;
-  padding:5px 0;
+  padding: 5px 0;
   color: black;
   opacity: 0.8;
-  padding:  0.5rem 0;
+  padding: 0.5rem 0;
   transition: all 0.4s ease-in-out;
 }
-.about__descSec a:hover{
+.about__descSec a:hover {
   opacity: 1;
 }
 
@@ -118,13 +118,14 @@
 @media screen and (max-width: 768px) {
   .about__InnerDiv {
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(12, 1fr);
+    grid-template-rows: repeat(13, 1fr);
     grid-template-areas:
       ". about__backBtn about__mainHeading about__mainHeading about__mainHeading about__mainHeading about__mainHeading about__mainHeading about__mainHeading about__mainHeading . ."
       ". about__backBtn about__mainHeading about__mainHeading about__mainHeading about__mainHeading about__mainHeading about__mainHeading about__mainHeading about__mainHeading . ."
-      ". . . . . about__imgSec about__imgSec . . . . ."
-      ". . . . . about__imgSec about__imgSec . . . . ."
-      ". . . . . about__imgSec about__imgSec . . . . ."
+      ". . . . about__imgSec about__imgSec about__imgSec about__imgSec . . . ."
+      ". . . . about__imgSec about__imgSec about__imgSec about__imgSec . . . ."
+      ". . . . about__imgSec about__imgSec about__imgSec about__imgSec . . . ."
+      ". . . . about__imgSec about__imgSec about__imgSec about__imgSec . . . ."
       ". about__descSec about__descSec about__descSec about__descSec about__descSec about__descSec about__descSec about__descSec about__descSec about__descSec ."
       ". about__descSec about__descSec about__descSec about__descSec about__descSec about__descSec about__descSec about__descSec about__descSec about__descSec ."
       ". about__descSec about__descSec  about__descSec about__descSec about__descSec about__descSec about__descSec about__descSec about__descSec about__descSec ."
@@ -133,7 +134,7 @@
       ". about__descSec about__descSec  about__descSec about__descSec about__descSec about__descSec about__descSec about__descSec about__descSec about__descSec ."
       ". . . . . . . . . . . .";
   }
-  .about__descSec a{
+  .about__descSec a {
     width: 50%;
   }
 }
