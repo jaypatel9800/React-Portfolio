@@ -30,24 +30,33 @@
 }
 .mainpage__main h1 {
   color: rgb(20, 20, 20);
-  font-size: 3rem;
+  font-size: 2.9rem;
   font-weight: 400;
   font-family: "Palette Mosaic", cursive;
 }
 .mainpage__githubLogo {
   grid-area: mainpage__githubLogo;
-  background-color: orange;
   border-radius: 20px 0 0 20px;
+  background: rgba(244, 131, 82, 0.5);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(15.5px);
+  -webkit-backdrop-filter: blur(15.5px);
 }
 .mainpage__linkdinLogo {
   grid-area: mainpage__linkdinLogo;
-  background-color: white;
   border-radius: 20px 0 0 20px;
+  background: rgba(254, 185, 156, 0.5);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(15.5px);
+  -webkit-backdrop-filter: blur(15.5px);
 }
 .mainpage__twitterLogo {
   grid-area: mainpage__twitterLogo;
-  background-color: green;
   border-radius: 20px 0 0 20px;
+  background: rgba(207, 175, 183, 0.5);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(15.5px);
+  -webkit-backdrop-filter: blur(15.5px);
 }
 .mainpage__button {
   grid-area: mainpage__button;
