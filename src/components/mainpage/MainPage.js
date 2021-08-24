@@ -96,4 +96,4 @@ const MainPage = () => {
   );
 };
 
-export default React.memo(MainPage);
+export default MainPage;

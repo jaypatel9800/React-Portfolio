@@ -14,4 +14,4 @@ const projectComp = ({ link, MainImg, altName, onclick }) => {
   );
 };
 
-export default React.memo(projectComp);
+export default projectComp;
