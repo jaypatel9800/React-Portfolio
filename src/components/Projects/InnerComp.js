@@ -19,4 +19,4 @@ const InnerComp = ({ leave, title, one, two, three, four, closeBtn }) => {
   );
 };
 
-export default InnerComp;
+export default React.memo(InnerComp);

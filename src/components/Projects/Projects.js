@@ -48,7 +48,7 @@ const Projects = () => {
                 two="Socket.io"
                 three="Nodejs"
                 four="Material-Ui"
-                closeBtn = {() => setFirst(true)}
+                closeBtn={() => setFirst(true)}
               />
             )}
           </div>
@@ -64,14 +64,14 @@ const Projects = () => {
             )}
             {!second && (
               <InnerComp
-              leave={() => setSecond(true)}
-              title="Ip Address Tracker"
-              one="ReactJs"
-              two="IP Geolocation API"
-              three="leafletjs"
-              four="styled components"
-              closeBtn = {() => setSecond(true)}
-            />   
+                leave={() => setSecond(true)}
+                title="Ip Address Tracker"
+                one="ReactJs"
+                two="IP Geolocation API"
+                three="leafletjs"
+                four="styled components"
+                closeBtn={() => setSecond(true)}
+              />
             )}
           </div>
 
@@ -86,14 +86,14 @@ const Projects = () => {
             )}
             {!third && (
               <InnerComp
-              leave={() => setThird(true)}
-              title="Todo App"
-              one="ReactJs"
-              two="CSS"
-              three="React Routers"
-              four="With Theme Toggle"
-              closeBtn = {() => setThird(true)}
-            />
+                leave={() => setThird(true)}
+                title="Todo App"
+                one="ReactJs"
+                two="CSS"
+                three="React Routers"
+                four="With Theme Toggle"
+                closeBtn={() => setThird(true)}
+              />
             )}
           </div>
 
@@ -108,14 +108,14 @@ const Projects = () => {
             )}
             {!fourth && (
               <InnerComp
-              leave={() => setFourth(true)}
-              title="Amazon Clone"
-              one="ReactJs"
-              two="Context API"
-              three="Firebase Auth"
-              four="React Routers"
-              closeBtn = {() => setFourth(true)}
-            />
+                leave={() => setFourth(true)}
+                title="Amazon Clone"
+                one="ReactJs"
+                two="Context API"
+                three="Firebase Auth"
+                four="React Routers"
+                closeBtn={() => setFourth(true)}
+              />
             )}
           </div>
 
@@ -130,14 +130,14 @@ const Projects = () => {
             )}
             {!fifth && (
               <InnerComp
-              leave={() => setFifth(true)}
-              title="SunShine Landing Page"
-              one="HTML"
-              two="CSS Flex"
-              three="CSS Grid"
-              four="JavaScript"
-              closeBtn = {() => setFifth(true)}
-            />
+                leave={() => setFifth(true)}
+                title="SunShine Landing Page"
+                one="HTML"
+                two="CSS Flex"
+                three="CSS Grid"
+                four="JavaScript"
+                closeBtn={() => setFifth(true)}
+              />
             )}
           </div>
 
@@ -152,14 +152,14 @@ const Projects = () => {
             )}
             {!six && (
               <InnerComp
-              leave={() => setSix(true)}
-              title="React Step Form"
-              one="ReactJs"
-              two="Material-Ui"
-              three="React hooks helper"
-              four="With validation"
-              closeBtn = {() => setSix(true)}
-            />
+                leave={() => setSix(true)}
+                title="React Step Form"
+                one="ReactJs"
+                two="Material-Ui"
+                three="React hooks helper"
+                four="With validation"
+                closeBtn={() => setSix(true)}
+              />
             )}
           </div>
         </div>
@@ -168,4 +168,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default React.memo(Projects);

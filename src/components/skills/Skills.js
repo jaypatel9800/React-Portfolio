@@ -25,19 +25,19 @@ const Skills = () => {
           onClick={() => history.replace("/")}
         />
         <div className="skills__items">
-          <img src={html} alt="htmllogo"/>
-          <img src={css} alt="csslogo"/>
-          <img src={js} alt="jslogo"/>
-          <img src={react} alt="reactlogo"/>
-          <img src={git} alt="gitlogo"/>
-          <img src={redux} alt="reduxlogo"/>
-          <img src={node} alt="nodelogo"/>
-          <img src={python} alt="pythonlogo"/>
-          <img src={matlab} alt="matlablogo"/>
+          <img src={html} alt="htmllogo" />
+          <img src={css} alt="csslogo" />
+          <img src={js} alt="jslogo" />
+          <img src={react} alt="reactlogo" />
+          <img src={git} alt="gitlogo" />
+          <img src={redux} alt="reduxlogo" />
+          <img src={node} alt="nodelogo" />
+          <img src={python} alt="pythonlogo" />
+          <img src={matlab} alt="matlablogo" />
         </div>
       </div>
     </div>
   );
 };
 
-export default Skills;
+export default React.memo(Skills);

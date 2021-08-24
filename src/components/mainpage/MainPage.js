@@ -1,4 +1,5 @@
 import "./mainpage.css";
+import React from "react";
 import { useState } from "react";
 import github from "../../assets/github.svg";
 import linkdin from "../../assets/linkedin.svg";
@@ -95,4 +96,4 @@ const MainPage = () => {
   );
 };
 
-export default MainPage;
+export default React.memo(MainPage);

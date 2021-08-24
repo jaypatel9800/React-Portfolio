@@ -1,15 +1,17 @@
 import React from "react";
-import "./projectComp.css"
+import "./projectComp.css";
 
-const projectComp = ({link, MainImg, altName, onclick}) => {
+const projectComp = ({ link, MainImg, altName, onclick }) => {
   return (
     <div className="project__img">
       <a href={link} target="_blank" rel="noreferrer">
-          <img src={MainImg} alt={altName}/>
+        <img src={MainImg} alt={altName} />
       </a>
-      <button onClick={onclick} className="project__detailBtn">Details</button>
+      <button onClick={onclick} className="project__detailBtn">
+        Details
+      </button>
     </div>
   );
 };
 
-export default projectComp;
+export default React.memo(projectComp);
