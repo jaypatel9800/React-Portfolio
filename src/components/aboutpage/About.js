@@ -4,7 +4,7 @@ import { useHistory } from "react-router-dom";
 import Back from "../../assets/back.svg";
 import Person from "../../assets/aboutPerson.svg";
 import Mypic from "../../assets/Mypic.jpg";
-import Resume from "../../assets/document/Jay resume 080821.pdf";
+import Resume from "../../assets/document/Jay-resume.pdf";
 import ResumeLogo from "../../assets/resumeLogo.svg";
 
 const About = () => {
@@ -42,14 +42,15 @@ const About = () => {
           <h2>
             An Electrical Engineer, Who loves coding and build things up.
             <br />
-            Hello, My name is Jay Patel. I am a currently active as a front-end
-            developer. I started my coding journey in my collage days. At first,
-            I started learning python, matlab and fundamentals of programming.
-            Since last two years, I am looking forward with my knowledge and
+            Hello, My name is Jay Patel. I am currently active as a front-end
+            developer. I started my coding journey in my college days. At first,
+            I started learning python, Matlab, and fundamentals of programming.
+            For the last two years, I am looking forward to my knowledge and
             skills in programming and I decided to start learning web
-            development. At first, I started learning HTML, CSS and JavaScript.
+            development. At first, I started learning HTML, CSS, and JavaScript.
             After gaining decent experience in core languages, I started with
-            ReactJs. I have 1+ experience in front-end development.
+            ReactJs and other libraries. Also, I have 1+ experience in front-end
+            development.
           </h2>
           <a href={Resume} target="_blank" rel="noreferrer" download>
             <img src={ResumeLogo} alt="Resume" />
